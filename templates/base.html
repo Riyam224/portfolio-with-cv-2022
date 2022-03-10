@@ -1,0 +1,70 @@
+{% load static %}
+<!--doctype html-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Personal Website</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<!--style----->
+	<style>
+		body{
+			font-family:poppins;
+		}
+
+        
+	</style>
+	
+</head>
+
+<body>
+
+    {% block content  %}
+    
+    
+    
+    
+    {% endblock content  %}
+
+
+      <!--footer--------------->
+ <footer>
+    <!--heading-->
+ <p>Going-To Internet</p>
+    <!--paragraph-->
+    <p>I makeas soon as possibale.You really like my work,if you don&#8217;t i change this until you like I give you seticfaction result</p>
+    <!--social-->
+   <div class="social-icons">
+   <a href="#"><i class="fab fa-facebook-f"></i></a>
+   <a href="#"><i class="fab fa-twitter"></i></a>
+   <a href="#"><i class="fab fa-instagram"></i></a>
+   <a href="#"><i class="fab fa-youtube"></i></a>
+   </div>
+    <!--copyright-->
+    <p class="copyright">Copyright by Goin-To Internet</p>
+</footer>
+   <!--social-attach-bar-->
+   <div class="social">
+   <a href="#"><i class="fab fa-facebook-f"></i></a>
+   <a href="#"><i class="fab fa-twitter"></i></a>
+   <a href="#"><i class="fab fa-instagram"></i></a>
+   <a href="#"><i class="fab fa-youtube"></i></a>
+   </div>
+
+   
+     <!--JQUery-------------------->
+<script type="text/javascript" src="js/JQuery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.toggle').click(function(){
+        $('.toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+    })
+})
+</script>
+
+</body>
+</html>
